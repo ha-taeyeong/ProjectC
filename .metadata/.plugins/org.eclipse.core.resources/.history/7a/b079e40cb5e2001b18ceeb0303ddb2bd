@@ -1,0 +1,67 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<% request.setCharacterEncoding("utf-8"); %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<jsp:include page="../layout/header.jsp">
+	<jsp:param value="마이페이지" name="title" />
+</jsp:include>
+
+<body>
+	
+	<h1>회원 정보</h1>
+
+	<form id="f1" method="post">
+	
+		아이디<br>
+		<input type="text" name="id" id="id" placeholder="${loginUser.id}"><br><br>
+		비밀번호<br>
+		<input type="text" name="pw" id="pw" placeholder="${loginUser.pw}"><br><br>
+		비밀번호 재확인<br>
+		<input type="text" name="pw2" id="pw2" placeholder="${loginUser.pw}"><br><br>
+		
+		<input type="button" id="update_btn" value="수정">
+		
+	</form>
+
+	<form id="f2" method="post">
+	
+		닉네임<br>
+		<input type="text" name="nickName" id="nickName" placeholder="${loginUser.nickName}"><br><br>
+		이름<br>
+		<input type="text" name="name" id="name" placeholder="${Member_NAME}"><br><br>
+		생년월일<br>
+		<input type="text" name="bir_yy" id="bir_yy" placeholder="${Member_BIRTHYEAR}">
+		<select id="bir_mm" aria-label="월">
+			<option value="01">"1"</option>
+			<option value="02">"2"</option>
+			<option value="03">"3"</option>
+			<option value="04">"4"</option>
+			<option value="05">"5"</option>
+			<option value="06">"6"</option>
+			<option value="07">"7"</option>
+			<option value="08">"8"</option>
+			<option value="09">"9"</option>
+			<option value="10">"10"</option>
+			<option value="11">"11"</option>
+			<option value="12">"12"</option>
+		</select>
+		<input type="text" name="bir_dd" id="bir_dd" placeholder="일">
+		<input type="button" id="button_btn" value="수정">
+		
+	</form>
+	<form id="f1" method="post">
+	
+		아이디<br>
+		<input type="text" name="id" id="id" placeholder="${loginUser.id}"><br><br>
+		비밀번호<br>
+		<input type="text" name="pw" id="pw" placeholder="${loginUser.pw}"><br><br>
+		비밀번호 재확인<br>
+		<input type="text" name="pw2" id="pw2" placeholder="${loginUser.pw}"><br><br>
+		
+		<input type="button" id="button_btn" value="수정">
+		
+	</form>
+
+	
+</body>
+</html>

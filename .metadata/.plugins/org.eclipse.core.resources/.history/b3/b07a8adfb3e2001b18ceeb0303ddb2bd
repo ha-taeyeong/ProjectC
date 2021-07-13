@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<% request.setCharacterEncoding("utf-8"); %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<jsp:include page="../layout/header.jsp">
+	<jsp:param value="마이페이지" name="title" />
+</jsp:include>
+
+<body>
+	
+	<h1>회원 정보</h1>
+
+	<form id="f1" method="post">
+	
+		아이디<br>
+		<input type="text" name="id" id="id" placeholder="${loginUser.id}"><br><br>
+		비밀번호<br>
+		${loginUser.}<br><br>
+		비밀번호 재확인<br>
+		${loginUser.}<br><br>
+		
+		<input type="button" id="button_btn" value="수정">
+		
+	</form>
+
+	
+</body>
+</html>

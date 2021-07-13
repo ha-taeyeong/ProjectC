@@ -1,0 +1,81 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+	$(document).ready(function(){
+		$('#join_btn').click(function(event){
+			if($('#pw').val() != $('#pw2').val()){
+				alert('비밀번호를 확인하십시오.')
+				event.preventDefault();
+				return false;
+			}else if($('#id').val('')||$('#pw').val('')||$('#pw2').val('')||
+					$('#name').val('')||$('#email').val('')){
+				alert('아이디,비밀번호 및 재확인,이름, 이메일 필수 ')
+				event.preventDefault();
+				return false;
+			}else{
+				$('#f').attr('action','m.join');
+				$('#f').submit();
+				
+			}
+			
+		})
+		
+	})
+	
+	</script>
+</head>
+<body>
+	<h1>로고</h1>
+	<form id="f" method="post" action="m.join">
+		
+		아이디<br>
+		<input type="text" name="id" id="id">
+		비밀번호<br>
+		<input type="text" name="pw" id="pw">
+		비밀번호 재확인<br>
+		<input type="text" name="pw2" id="pw2">
+		닉네임<br>
+		<input type="text" name="nickName" id="nickName">
+		이름<br>
+		<input type="text" name="name" id="name">
+		생년월일<br>
+		<input type="text" name="bir_yy" id="bir_yy" placeholder="년(4자)">
+		<select id="bir_mm" aria-label="월">
+			<option value="01">"1"</option>
+			<option value="02">"2"</option>
+			<option value="03">"3"</option>
+			<option value="04">"4"</option>
+			<option value="05">"5"</option>
+			<option value="06">"6"</option>
+			<option value="07">"7"</option>
+			<option value="08">"8"</option>
+			<option value="09">"9"</option>
+			<option value="10">"10"</option>
+			<option value="11">"11"</option>
+			<option value="12">"12"</option>
+		</select>
+		<input type="text" name="bir_dd" id="bir_dd" placeholder="일">
+		성별<br>
+		<input type="text" name="gender" id="gender">
+		주소<br>
+		시/도<input type="text" name="city" id="city">
+		구/군<input type="text" name="region" id="region">
+		상세주소<input type="text" name="location" id="location">
+	
+		연락처<br>
+		<input type="text" name="phone" id="phone">
+		이메일<br>
+		<input type="text" name="email" id="email">
+		
+		<input type="button" id="join_btn" value="가입하기">
+		
+	</form>
+</body>
+</html>
