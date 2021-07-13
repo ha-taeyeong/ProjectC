@@ -1,13 +1,21 @@
 INDEX VERSION 1.130
-C:\install\projectC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3363616645.index
-\DooBoo\src\main\java
 C:\install\projectC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2949080216.index
-\DooBoo\src\main\java
-C:\install\projectC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2698754883.index
-\DooBoo\src\main\java
-C:\install\projectC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\223327496.index
 \DooBoo\src\main\java
 C:\install\projectC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3926207193.index
 \DooBoo\src\main\java
+C:\install\projectC\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3926207193.index
+\DooBoo\src\main\java
+C:\install\projectC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3363616645.index
+\DooBoo\src\main\java
+C:\install\projectC\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\223327496.index
+\DooBoo\src\main\java
+C:\install\projectC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2698754883.index
+\DooBoo\src\main\java
+C:\install\projectC\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2698754883.index
+\DooBoo\src\main\java
 C:\install\projectC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1125432132.index
+\DooBoo\src\main\java
+C:\install\projectC\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3363616645.index
+\DooBoo\src\main\java
+C:\install\projectC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\223327496.index
 \DooBoo\src\main\java

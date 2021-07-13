@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.koreait.dooboo.dao.MemberDAO">
+	<insert id="join" >
+		INSERT INTO MEMBER VALUES(Member_SEQ.NEXTVAL,#{Member_NAME},#{Member_PHONE},#{Member_ID},#{Member_PW},#{Member_EMAIL},#{Member_NICKNAME},
+		#{Member_GENDER}, #{Member_REGDATE}, #{Member_OUTDATE},0 , #{Member_CITY}, #{Member_REGION}, #{Member_LOCATION},
+		#{Member_LASTMODIFIED},#{Member_BIRTHDAY}) <!-- status 0 = 정상   , 1= 삭제 -->
+	</insert>
+	
+	<select id="login" resultType="com.koreait.dooboo.member.dto.MemberDTO">
+		SELECT * FROM MEMBER WHERE ID = #{Member_ID} AND PW= #{Member_PW}
+	</select>
+	
+	
+
+</mapper>
