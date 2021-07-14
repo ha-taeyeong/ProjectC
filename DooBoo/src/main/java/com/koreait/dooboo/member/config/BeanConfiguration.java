@@ -9,8 +9,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
+import com.koreait.dooboo.member.command.DeleteCommand;
+import com.koreait.dooboo.member.command.IdCheckCommand;
 import com.koreait.dooboo.member.command.JoinCommand;
 import com.koreait.dooboo.member.command.LoginCommand;
+import com.koreait.dooboo.member.command.UpdateCommand;
+import com.koreait.dooboo.member.command.UpdateCommand2;
+import com.koreait.dooboo.member.command.UpdateCommand3;
+import com.koreait.dooboo.member.command.UpdateCommand4;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
@@ -52,5 +58,29 @@ public class BeanConfiguration {
 	@Bean
 	public LoginCommand loginCommand() {
 		return new LoginCommand();
+	}
+	
+	@Bean
+	public UpdateCommand updateCommand() {
+		return new UpdateCommand();
+	}
+	@Bean
+	public UpdateCommand2 updateCommand2() {
+		return new UpdateCommand2();
+	}
+	@Bean
+	public UpdateCommand3 updateCommand3() {
+		return new UpdateCommand3();
+	}
+	@Bean
+	public UpdateCommand4 updateCommand4() {
+		return new UpdateCommand4();
+	}
+	@Bean
+	public DeleteCommand deleteCommand() {
+		return new DeleteCommand();
+	}
+	public IdCheckCommand idCheckCommand() {
+		return new IdCheckCommand();
 	}
 }

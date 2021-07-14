@@ -14,6 +14,50 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		SELECT * FROM MEMBER WHERE ID = #{Member_ID} AND PW= #{Member_PW}
 	</select>
 	
+	<update id="update1" >
+		UPDATE MEMBER 
+		SET NICKNAME = #{Member_NICKNAME}
+		WHERE #{Member_ID}
+	</update>
+	
+	<update id="update2" >
+		UPDATE MEMBER 
+		SET PHONE = #{Member_PHONE},
+			EMAIL = #{Member_EMAIL}
+		WHERE #{Member_ID}
+	</update>
+	
+	<update id="update3" >
+		UPDATE MEMBER 
+		SET PASSWORD = #{Member_PHONE}
+		WHERE #{Member_ID}
+			
+	</update>
+	
+	<update id="update4" >
+		UPDATE MEMBER 
+		SET CITY = #{Member_CITY},
+			REGION = #{Member_REGION},
+			LOCATION = #{Member_LOCATION}
+		WHERE #{Member_ID}
+	</update>
+	
+	<select id="idCheck" resultType="int">
+		SELECT COUNT(MEMBER_ID) FROM MEMBER WHERE MEMBER_ID = #{MEMBER_ID}
+	</select>	
+	
+	<update id="delete">
+		UPDATE MEMBER
+		SET STATUS = 1
+		WHERE MEMBER_ID = #{MEMBER_ID}
+	</update>
+	
+	<update id="changePw">
+		UPDATE MEMBER 
+		SET PASSWORD = #{MEMBER_PW}
+		WHERE MEMBER_NO = #{Member_NO}
+	</update>
+	
 	
 
 </mapper>

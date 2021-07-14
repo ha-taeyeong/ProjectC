@@ -1,0 +1,14 @@
+package com.koreait.dooboo.member.command;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.ui.Model;
+
+public class DeleteCommand implements MemberCommand {
+
+	@Override
+	public void execute(SqlSession sqlSession, Model model) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

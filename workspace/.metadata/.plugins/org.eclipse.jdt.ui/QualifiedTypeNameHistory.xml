@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.mail.javamail.JavaMailSender"/>
+<fullyQualifiedTypeName name="javax.mail.internet.MimeMessage"/>
+<fullyQualifiedTypeName name="javax.mail.internet.InternetAddress"/>
+<fullyQualifiedTypeName name="javax.mail.Message"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.util.SecurityUtils"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.dao.MemberDAO"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.command.UpdateCommand"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.command.UpdateCommand2"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.command.UpdateCommand3"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.command.UpdateCommand4"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.command.DeleteCommand"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.command.IdCheckCommand"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.command.PwCheckCommand"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.command.EmailCommand"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.command.ChangePwCommand"/>
+<fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="com.koreait.dooboo.member.dto.MemberDTO"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+</qualifiedTypeNameHistroy>
